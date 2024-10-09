@@ -48,3 +48,15 @@ if (num1 > 15) {
 // 5. Clear Comments
 
 // We've added comments throughout the code to explain each comparison and conditional statement.
+
+let a = 18;
+let b = "pub";
+let num85 = 29;
+
+if (num85 < 18) {
+  console.log("no pub");
+} else {
+  console.log("PUB!")
+}
+
+console.log(a + b)
