@@ -1,4 +1,5 @@
 // 1. Object.keys() - TODO: WHat does this method do? What is the output?
+// ans: It printd  
 const person = {
   name: "Alice",
   age: 30,
@@ -7,14 +8,17 @@ const person = {
 console.log("Keys:", Object.keys(person));
 
 // 2. Object.values() - TODO: WHat does this method do? What is the output?
+// prints all the values of the keys
 console.log("Values:", Object.values(person));
 
 // 3. Array.push() - TODO: WHat does this method do? What is the output?
+// It adds one onto the array.
 let fruits = ["apple", "banana"];
 fruits.push("orange");
 console.log("After push:", fruits); // ["apple", "banana", "orange"]
 
 // 4. Array.pop() - TODO: WHat does this method do? What is the output?
+// pop takes one off the array.
 let poppedFruit = fruits.pop();
 console.log("After pop:", fruits); // ["apple", "banana"]
 console.log("Popped fruit:", poppedFruit); // "orange"
@@ -25,15 +29,18 @@ console.log("After shift:", fruits); // ["banana"]
 console.log("Shifted fruit:", shiftedFruit); // "apple"
 
 // 6. Array.concat() - TODO: WHat does this method do? What is the output?
+// It concats all the elements together.
 let vegetables = ["carrot", "potato"];
 let food = fruits.concat(vegetables);
 console.log("After concat:", food); // ["mango", "banana", "carrot", "potato"]
 
 // 7. Array.indexOf() - TODO: WHat does this method do? What is the output?
+
 let index = food.indexOf("banana");
 console.log("Index of banana:", index); // 1
 
 // 8. Array.includes() - TODO: WHat does this method do? What is the output?
+// ans. it includes an object to the array.
 let hasMango = food.includes("mango");
 console.log("Array contains mango:", hasMango); // true
 
