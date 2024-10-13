@@ -1,4 +1,4 @@
-console.log("Hello from script.js");
+//console.log("Hello from script.js");
 
 // What is this?
 console.log(window);
