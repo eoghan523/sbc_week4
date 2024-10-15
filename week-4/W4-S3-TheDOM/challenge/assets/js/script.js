@@ -53,30 +53,27 @@ document.addEventListener("DOMContentLoaded", function () {
             completeBtn.addEventListener('click', function() {
                 //The function is an 'if' / 'else' function. if statusCell text content is equal value and equal data to the string 'Completed'.//
                 if (statusCell.textContent === 'Completed') {
-                    alert("task is already completed.") //alert
+                    alert("task is already completed.") //alert will appear if the data type and value are the same as 'Completed.'
 
                     } else {
                          //This creates an event listener for the 'completeBtn' that listens for a click event triggers a function to change the text
                         statusCell.textContent = 'Completed';
                         completeBtn.disabled = true;
                     }
-
-
+                    //The else function idf the textContent is not the same value, The statusCell text Content will change from Incomplete to 'Completed'.
+                    //When the statusCell.textContent is the value of 'Completed' then the boolean function of true will disable the button.
                 });
                  
-           
-
-
                // Attach event listener for the delete button
             const deleteBtn = createNewTask.querySelector('.deleteBtn');
+            //This line creates the variable deleteBtn and links the value to .'deleteBtn' using .query selector from createNewTask.
             
-            
-            deleteBtn.addEventListener('click', function() {
+            deleteBtn.addEventListener('click', function() {    //This is an event listener for the deleteBtn. When clicked it performs a function.
                    // Remove the task row from the table
-            taskTableBody.removeChild(createNewTask);
-
-
-            });
+                taskTableBody.removeChild(createNewTask);
+                // Function is remove Child from the taskTableBody.
+           
+            }); //This closes the deleteBtn event listener function.
       
                 
 
@@ -85,9 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             
            
-        }
-    });
-})
+        } //This closes the function 'addTaskToTable'
+    }); //This closes the addBtn event listener function.
+}) //This closes the "DOMContentLoaded" function all the other functions are nested in.
 
    
 
