@@ -34,10 +34,25 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>${task.date}</td>
                 <td>
                     <button class='completeBtn'>Complete</button>
-                    <button class='completeBtn'>Complete</button>
+                    
+                    <button class='deleteBtn'>Delete</button>
                 </td>
             `;
             taskTableBody.appendChild(createNewTask);
+
+
+               // Attach event listener for the delete button
+            const deleteBtn = createNewTask.querySelector('.deleteBtn');
+            
+            
+            deleteBtn.addEventListener('click', function() {
+                   // Remove the task row from the table
+            taskTableBody.removeChild(createNewTask);
+
+
+            });
+
+
             
             // The back ticks create a  template literal which allows you to put multiple lines of code to build the table.            
         }

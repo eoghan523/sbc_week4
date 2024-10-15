@@ -121,8 +121,23 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    font-size: large;
 }
 
 .completeBtn:hover {
     background-color: #45a049;
+}
+
+.deleteBtn {
+    background-color: red;
+    color: #ffffff;
+    padding: 8px 12px;border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: large;
+    width: max-content;
+}
+
+.deleteBtn:hover {
+    background-color: #fc6a7b)
 }
