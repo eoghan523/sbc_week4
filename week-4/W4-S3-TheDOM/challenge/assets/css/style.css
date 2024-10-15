@@ -114,7 +114,7 @@ body {
     color: white;
 }
 
-.complete-btn {
+.completeBtn {
     background-color: #4CAF50;
     color: white;
     padding: 8px 12px;
@@ -123,6 +123,6 @@ body {
     border-radius: 4px;
 }
 
-.complete-btn:hover {
+.completeBtn:hover {
     background-color: #45a049;
 }
